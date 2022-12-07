@@ -374,19 +374,19 @@ footer > a {
   z-index: -1;
 }
 
-@media (max-width: 599px) and (orientation: portrait) {
+/* @media (max-width: 599px) and (orientation: portrait) {
   .rotation {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
   }
-}
+} */
 
-@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+/* @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .rotation {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
+} */

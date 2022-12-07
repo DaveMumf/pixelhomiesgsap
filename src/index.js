@@ -108,9 +108,9 @@ async function setupViewer() {
     const tl = gsap.timeline();
 
     tl.to(modelPosition, {
-      x: -0.9,
-      y: -0.43,
-      z: 0,
+      x: 0.0,
+      y: 0.0,
+      z: 0.0,
       scrollTrigger: {
         trigger: ".first",
         start: "top top",
@@ -122,8 +122,8 @@ async function setupViewer() {
     })
 
       .to(modelPosition, {
-        x: -1.36,
-        y: -0.02,
+        x: 0.00,
+        y: 3.5,
         z: -0.22,
         scrollTrigger: {
           trigger: ".second",
@@ -149,9 +149,9 @@ async function setupViewer() {
       })
 
       .to(modelPosition, {
-        x: 0.38,
-        y: -0.11,
-        z: -1.06,
+        x: 1.40,
+        y: -1.30,
+        z: 0.00,
         scrollTrigger: {
           trigger: ".third",
           start: "top bottom",
@@ -163,8 +163,8 @@ async function setupViewer() {
       })
 
       .to(modelRotation, {
-        x: 0.403,
-        y: 0.957,
+        x: -0.403,
+        y: 0.3,
         z: -0.421,
         scrollTrigger: {
           trigger: ".third",
@@ -176,9 +176,9 @@ async function setupViewer() {
       })
 
       .to(modelPosition, {
-        x: 0.92,
-        y: -0.31,
-        z: 0.66,
+        x: -1.5,
+        y: -2.0,
+        z: 0,
         scrollTrigger: {
           trigger: ".four",
           start: "top bottom",
@@ -190,9 +190,9 @@ async function setupViewer() {
       })
 
       .to(modelRotation, {
-        x: 0.0,
-        y: 1.641,
-        z: 0,
+        x: 0,
+        y: 0,
+        z: 3.0,
         scrollTrigger: {
           trigger: ".four",
           start: "top bottom",
@@ -202,9 +202,9 @@ async function setupViewer() {
         },
       })
       .to(modelPosition, {
-        x: -0.1,
-        y: -0.11,
-        z: 0.99,
+        x: -2.0,
+        y: -0.50,
+        z: 0.50,
         scrollTrigger: {
           trigger: ".five",
           start: "top bottom",
@@ -215,9 +215,9 @@ async function setupViewer() {
         onUpdate,
       })
       .to(modelRotation, {
-        x: -0.785,
-        y: 2.329,
-        z: 0.903,
+        x: 0,
+        y: 0.2,
+        z: 0.95,
         scrollTrigger: {
           trigger: ".five",
           start: "top bottom",
