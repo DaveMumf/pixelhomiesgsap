@@ -60,10 +60,22 @@ async function setupViewer() {
   });
 
   viewer.renderer.refreshPipeline();
-  const model = await manager.addFromPath("./assets/scene.glb");
+
+  let a = ["./assets/scene.glb","./assets/scene2.glb","./assets/scene3.glb"];
+  var r = a[Math.floor(Math.random()*a.length)];
+
+
+  
+
+  const model = await manager.addFromPath(r);
+  
+  
   const object3d = model[0].modelObject;
   const modelPosition = object3d.position;
   const modelRotation = object3d.rotation;
+  
+
+
 
   const loaderElement = document.querySelector(".loader");
 

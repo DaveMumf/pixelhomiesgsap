@@ -65505,7 +65505,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/mumf/coding/pixelhomies2/pixelhomiesgsap/fonts/alagard.ttf":[["alagard.ee30ee34.ttf","fonts/alagard.ttf"],"fonts/alagard.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/gsap/gsap-core.js":[function(require,module,exports) {
+},{"/Users/mumf/coding/pixelhomies2/pixelhomiesgsap/fonts/alagard.ttf":[["alagard.ee30ee34.ttf","fonts/alagard.ttf"],"fonts/alagard.ttf"],"./../images/FacebookBlanco.png":[["FacebookBlanco.493c1296.png","images/FacebookBlanco.png"],"images/FacebookBlanco.png"],"./../images/TwitterBlanco.png":[["TwitterBlanco.3864e948.png","images/TwitterBlanco.png"],"images/TwitterBlanco.png"],"./../images/LinkedinBlanco.png":[["LinkedinBlanco.fe85bb69.png","images/LinkedinBlanco.png"],"images/LinkedinBlanco.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/gsap/gsap-core.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -81136,7 +81136,7 @@ function setupViewer() {
 function _setupViewer() {
   _setupViewer = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
     var _document$querySelect2;
-    var viewer, manager, camera, importer, model, object3d, modelPosition, modelRotation, loaderElement, introAnimation, setupScrollanimation, needsUpdate, onUpdate;
+    var viewer, manager, camera, importer, a, r, model, object3d, modelPosition, modelRotation, loaderElement, introAnimation, setupScrollanimation, needsUpdate, onUpdate;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -81400,9 +81400,11 @@ function _setupViewer() {
               introAnimation();
             });
             viewer.renderer.refreshPipeline();
-            _context.next = 25;
-            return manager.addFromPath("./assets/scene.glb");
-          case 25:
+            a = ["./assets/scene.glb", "./assets/scene2.glb", "./assets/scene3.glb"];
+            r = a[Math.floor(Math.random() * a.length)];
+            _context.next = 27;
+            return manager.addFromPath(r);
+          case 27:
             model = _context.sent;
             object3d = model[0].modelObject;
             modelPosition = object3d.position;
@@ -81429,7 +81431,7 @@ function _setupViewer() {
                 });
               });
             });
-          case 32:
+          case 34:
           case "end":
             return _context.stop();
         }
@@ -81464,7 +81466,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56869" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55786" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
