@@ -8,7 +8,7 @@ import {
   SSAOPlugin,
   BloomPlugin,
 } from "webgi";
-import "./styles.css";
+import "./styles.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Pane } from "tweakpane";

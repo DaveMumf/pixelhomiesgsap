@@ -1,0 +1,61 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\norin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add sass -D
+
+PATH: 
+  C:\Users\norin\Desktop\PH\pixelhomiesgsap\node_modules\.bin;C:\Users\norin\Desktop\PH\node_modules\.bin;C:\Users\norin\Desktop\node_modules\.bin;C:\Users\norin\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\norin\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\norin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\norin\AppData\Local\Programs\Python\Python310\;C:\Users\norin\AppData\Local\Microsoft\WindowsApps;C:\Users\norin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\norin\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\norin\Desktop\PH\pixelhomiesgsap\node_modules\deasync\bin\win32-x64-node-18\deasync.node'
+
+npm manifest: 
+  {
+    "name": "webgi-vanilla-typescript",
+    "version": "1.0.0",
+    "description": "WebGi + TypeScript example starter project",
+    "main": "index.html",
+    "scripts": {
+      "start": "parcel index.html",
+      "build": "parcel build index.html --no-minify --public-url ./",
+      "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --verbose"
+    },
+    "devDependencies": {
+      "parcel-bundler": "^1.6.1",
+      "parcel-plugin-static-files-copy": "^2.6.0",
+      "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.4.7.tgz"
+    },
+    "resolutions": {
+      "@babel/preset-env": "7.13.8"
+    },
+    "keywords": [
+      "javascript"
+    ],
+    "staticFiles": {
+      "staticPath": [
+        {
+          "staticPath": "assets",
+          "staticOutDir": "assets"
+        }
+      ]
+    },
+    "dependencies": {
+      "gh-pages": "^4.0.0",
+      "gsap": "^3.11.1",
+      "push-dir": "^0.4.1",
+      "tweakpane": "^3.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
